@@ -1,0 +1,1302 @@
+const products = [
+    // Men Products
+    {
+        id: "m1",
+        name: "Classic Black Tee",
+        price: 200,
+        originalPrice: 300,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748868074/samples/animals/Black-Classic-V-Neck-3-Pack_sgg6ai.webp",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.5,
+        reviewCount: 154,
+        inStock: true
+    },
+    {
+        id: "m2",
+        name: "White Cotton Tee",
+        price: 220,
+        originalPrice: 320,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748868710/mxebasn3wf0ntukcca44.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.4,
+        reviewCount: 109,
+        inStock: true
+    },
+    {
+        id: "m3",
+        name: "Grey Urban Tee",
+        price: 280,
+        originalPrice: 380,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748869392/dlwngxegwvojlogwflix.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.6,
+        reviewCount: 132,
+        inStock: true
+    },
+    {
+        id: "4",
+        name: "Blue Tee",
+        price: 300,
+        originalPrice: 400,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748869610/samples/animals/snkkbfl7pfnou17xj1te.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.5,
+        reviewCount: 87,
+        inStock: true
+    },
+    {
+        id: "5",
+        name: "Maroon Tee",
+        price: 300,
+        originalPrice: 400,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748870663/samples/animals/ubtccx9jxnh2agts95ns.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.3,
+        reviewCount: 93,
+        inStock: true
+    },
+    {
+        id: "6",
+        name: "Cream Tee",
+        price: 300,
+        originalPrice: 400,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748870514/samples/animals/p2rsxqyc1zedflsuqfv7.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.4,
+        reviewCount: 120,
+        inStock: true
+    },
+    {
+        id: "7",
+        name: "saran collection 1",
+        price: 500,
+        originalPrice: 600,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748975737/uupnvmmsq0gu0bnlzmqs.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.7,
+        reviewCount: 168,
+        inStock: true
+    },
+    {
+        id: "8",
+        name: "saran collection 2",
+        price: 800,
+        originalPrice: 900,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748975840/yhznc2htdmmiqogjsm9a.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.8,
+        reviewCount: 194,
+        inStock: true
+    },
+    {
+        id: "9",
+        name: "saran collection 3",
+        price: 950,
+        originalPrice: 1050,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1748975929/swgqpb3b9pcpah0njxeo.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Black", "White", "Gray"],
+        rating: 4.6,
+        reviewCount: 178,
+        inStock: true
+    },
+    {
+        id: "10",
+        name: "DD collar brown T-shirt",
+        price: 580,
+        originalPrice: 680,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749134243/elidomp3qbq5kp1768wb.jpg",
+        category: "men",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Brown", "Beige", "White"],
+        rating: 4.5,
+        reviewCount: 133,
+        inStock: true
+    },
+
+    // Women Products
+    {
+        id: "w1",
+        name: "Floral Top",
+        price: 350,
+        originalPrice: 450,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749206711/a8tlajpljpuvllzngzqq.jpg",
+        category: "women",
+        sizes: ["S", "M", "L"],
+        colors: ["Pink", "Blue", "White"],
+        rating: 4.6,
+        reviewCount: 98,
+        inStock: true
+    },
+    {
+        id: "w2",
+        name: "Denim Jacket",
+        price: 800,
+        originalPrice: 900,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749206767/n9bgiogdgwngknwfdlqb.jpg",
+        category: "women",
+        sizes: ["S", "M", "L"],
+        colors: ["Blue", "Black"],
+        rating: 4.7,
+        reviewCount: 120,
+        inStock: true
+    },
+    {
+        id: "w3",
+        name: "purpole t-shirt",
+        price: 300,
+        originalPrice: 400,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749206767/tnbqtmybvkte6nswxovq.jpg",
+        category: "women",
+        sizes: ["S", "M", "L"],
+        colors: ["Purple", "White"],
+        rating: 4.4,
+        reviewCount: 77,
+        inStock: true
+    },
+    {
+        id: "w4",
+        name: "cream-hoddie",
+        price: 500,
+        originalPrice: 600,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749206769/yhrsl2o4f4madh8llcbj.jpg",
+        category: "women",
+        sizes: ["S", "M", "L"],
+        colors: ["Cream", "Beige"],
+        rating: 4.6,
+        reviewCount: 102,
+        inStock: true
+    },
+
+    // Accessories Products
+    {
+        id: "a1",
+        name: "shoes",
+        price: 450,
+        originalPrice: 550,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749207040/drghgp6ptuutx7jh7nzy.jpg",
+        category: "accessories",
+        colors: ["Black", "White"],
+        rating: 4.5,
+        reviewCount: 190,
+        inStock: true
+    },
+    {
+        id: "a2",
+        name: "Sunglasses",
+        price: 999,
+        originalPrice: 1099,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749207470/jiwzeso0r9brptbdrgzs.jpg",
+        category: "accessories",
+        colors: ["Black", "Brown", "Gold"],
+        rating: 4.6,
+        reviewCount: 214,
+        inStock: true
+    },
+    {
+        id: "a3",
+        name: "Watch",
+        price: 2000,
+        originalPrice: 2100,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749207040/kw33kwhoe540f0ac78xp.jpg",
+        category: "accessories",
+        colors: ["Black", "Silver", "Gold"],
+        rating: 4.8,
+        reviewCount: 300,
+        inStock: true
+    },
+    {
+        id: "a4",
+        name: "Bracelet",
+        price: 250,
+        originalPrice: 350,
+        image: "https://res.cloudinary.com/dkru50fhh/image/upload/v1749207340/ndgbvyeozlfekun0csz2.jpg",
+        category: "accessories",
+        colors: ["Silver", "Gold", "Rose Gold"],
+        rating: 4.4,
+        reviewCount: 140,
+        inStock: true
+    }
+];
+let currentUser = null;
+let isLoggedIn = false;
+let authMode = 'login';
+let cart = [];
+let currentProduct = null;
+let selectedSize = null;
+let selectedColor = null;
+
+function formatPrice(price) {
+    return `₹${price.toLocaleString('en-IN')}`;
+}
+
+function generateStars(rating) {
+    const fullStars = Math.floor(rating);
+    const hasHalfSar = rating % 1 !== 0;
+    let stars = '';
+
+    for (let i = 0; i < fullStars; i++) {
+        stars += '★';
+    }
+
+    if (hasHalfSar) {
+        stars += '☆';
+    }
+
+    const emptyStars = 5 - Math.ceil(rating);
+    for (let i = 0; i < emptyStars; i++) {
+        stars += '☆';
+    }
+
+    return stars;
+}
+
+function calculateDiscount(originalPrice, currentPrice) {
+    if (!originalPrice || originalPrice <= currentPrice) return 0;
+    return Math.round(((originalPrice - currentPrice) / originalPrice) * 100);
+}
+
+function generateOrderId() {
+    return 'ORD' + Date.now().toString().slice(-6);
+}
+
+function saveToLocalStorage(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
+}
+
+function loadFromLocalStorage(key) {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
+}
+
+function initializeData() {
+    const savedCart = loadFromLocalStorage('vayun_cart');
+    if (savedCart) {
+        cart = savedCart;
+    }
+
+    const savedUser = loadFromLocalStorage('vayun_user');
+    if (savedUser) {
+        currentUser = savedUser;
+        isLoggedIn = true;
+    }
+}
+
+function showSection(sectionName) {
+    document.getElementById('homeSection').classList.add('hidden');
+    document.getElementById('productDetailSection').classList.add('hidden');
+    document.getElementById('checkoutSection').classList.add('hidden');
+    if (sectionName === 'home') {
+        document.getElementById('homeSection').classList.remove('hidden');
+        displayProducts(products.filter(p => p.featured));
+    } else if (sectionName === 'productDetail') {
+        document.getElementById('productDetailSection').classList.remove('hidden');
+    } else if (sectionName === 'checkout') {
+        document.getElementById('checkoutSection').classList.remove('hidden');
+        loadCheckoutData();
+    }
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+
+    if (sectionName === 'home') {
+        document.querySelector('.nav-link[onclick="showSection(\'home\')"]').classList.add('active');
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    initializeData();
+    initializeApp();
+});
+
+function initializeApp() {
+    loadProducts();
+    updateCartCount();
+    updateAuthButton();
+    setupEventListeners();
+    displayProducts(products.filter(p => p.featured));
+}
+
+function setupEventListeners() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', handleSearch);
+    }
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+    const cartBtn = document.getElementById('cartBtn');
+    if (cartBtn) {
+        cartBtn.addEventListener('click', () => openModal('cartModal'));
+    }
+    const loginBtn = document.getElementById('loginBtn');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', handleLoginClick);
+    }
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', handleNewsletterSubmit);
+    }
+    const authForm = document.getElementById('authForm');
+    if (authForm) {
+        authForm.addEventListener('submit', handleAuthSubmit);
+    }
+    const paymentMethods = document.querySelectorAll('input[name="payment"]');
+    paymentMethods.forEach(method => {
+        method.addEventListener('change', handlePaymentMethodChange);
+    });
+    setupInputFormatting();
+}
+
+function loadProducts() {
+    const productsGrid = document.getElementById('productsGrid');
+    if (!productsGrid) return;
+    const featuredProducts = products.filter(product => product.featured);
+    displayProducts(featuredProducts);
+}
+
+function displayProducts(productsToShow) {
+    const productsGrid = document.getElementById('productsGrid');
+    if (!productsGrid) return;
+
+    productsGrid.innerHTML = '';
+
+    productsToShow.forEach(product => {
+        const productCard = createProductCard(product);
+        productsGrid.appendChild(productCard);
+    });
+}
+
+function createProductCard(product) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.onclick = () => showProductDetail(product.id);
+
+    const discount = product.originalPrice ? calculateDiscount(product.originalPrice, product.price) : 0;
+
+    card.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    ${discount > 0 ? `<span class="product-badge">${discount}% OFF</span>` : ''}
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-description">${product.description}</p>
+                    <div class="product-rating">
+                        <span class="stars">${generateStars(product.rating)}</span>
+                        <span class="rating-count">(${product.reviewCount})</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">${formatPrice(product.price)}</span>
+                        ${product.originalPrice ? `<span class="original-price">${formatPrice(product.originalPrice)}</span>` : ''}
+                        ${discount > 0 ? `<span class="discount">${discount}% OFF</span>` : ''}
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation(); addToCart('${product.id}')">
+                            Add to Cart
+                        </button>
+                        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist('${product.id}')">
+                            ♡
+                        </button>
+                    </div>
+                </div>
+            `;
+
+    return card;
+}
+
+function handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase().trim();
+
+    if (searchTerm === '') {
+        displayProducts(products.filter(p => p.featured));
+        return;
+    }
+
+    const filteredProducts = products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm) ||
+        product.description.toLowerCase().includes(searchTerm) ||
+        product.category.toLowerCase().includes(searchTerm)
+    );
+
+    displayProducts(filteredProducts);
+}
+
+function filterByCategory(category) {
+    const filteredProducts = products.filter(product => product.category === category);
+    displayProducts(filteredProducts);
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+
+    const categoryLink = document.querySelector(`.nav-link[onclick="filterByCategory('${category}')"]`);
+    if (categoryLink) {
+        categoryLink.classList.add('active');
+    }
+    scrollToSection('featured');
+}
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
+
+function toggleMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    if (navMenu) {
+        navMenu.classList.toggle('active');
+    }
+}
+
+function handleLoginClick() {
+    if (isLoggedIn) {
+        logout();
+    } else {
+        openModal('loginModal');
+    }
+}
+
+function logout() {
+    currentUser = null;
+    isLoggedIn = false;
+    saveToLocalStorage('vayun_user', null);
+    updateAuthButton();
+    showNotification('Logged out successfully!');
+}
+
+function updateAuthButton() {
+    const loginBtn = document.getElementById('loginBtn');
+    if (loginBtn) {
+        if (isLoggedIn && currentUser) {
+            loginBtn.textContent = `Hi, ${currentUser.name.split(' ')[0]}`;
+            loginBtn.onclick = logout;
+        } else {
+            loginBtn.textContent = 'Login';
+            loginBtn.onclick = () => openModal('loginModal');
+        }
+    }
+}
+
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    const emailInput = event.target.querySelector('.newsletter-input');
+    const email = emailInput.value.trim();
+
+    if (email) {
+        showNotification('Thank you for subscribing to our newsletter!');
+        emailInput.value = '';
+    }
+}
+
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    const existingItem = cart.find(item => item.product.id === productId);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            product: product,
+            quantity: 1,
+            selectedSize: product.sizes ? product.sizes[0] : null,
+            selectedColor: product.colors ? product.colors[0] : null
+        });
+    }
+
+    saveToLocalStorage('vayun_cart', cart);
+    updateCartCount();
+    showNotification('Product added to cart!');
+}
+
+function updateCartCount() {
+    const cartCount = document.getElementById('cartCount');
+    if (cartCount) {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = totalItems;
+    }
+}
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+function toggleWishlist(productId) {
+    showNotification('Added to wishlist!');
+}
+
+function goToCheckout() {
+    if (cart.length === 0) {
+        showNotification('Your cart is empty!');
+        return;
+    }
+
+    if (!isLoggedIn) {
+        showNotification('Please login to proceed with checkout');
+        openModal('loginModal');
+        return;
+    }
+
+    closeModal('cartModal');
+    showSection('checkout');
+}
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+
+        if (modalId === 'cartModal') {
+            loadCartItems();
+        }
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function loadCartItems() {
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+
+    if (!cartItems || !cartTotal) return;
+
+    if (cart.length === 0) {
+        cartItems.innerHTML = '<p style="text-align: center; color: #666; padding: 40px;">Your cart is empty</p>';
+        cartTotal.textContent = 'Total: ₹0';
+        return;
+    }
+
+    let total = 0;
+    cartItems.innerHTML = '';
+
+    cart.forEach(item => {
+        const itemTotal = item.product.price * item.quantity;
+        total += itemTotal;
+
+        const cartItem = document.createElement('div');
+        cartItem.style.cssText = `
+                    display: flex;
+                    gap: 16px;
+                    padding: 16px 0;
+                    border-bottom: 1px solid #eee;
+                `;
+
+        cartItem.innerHTML = `
+                    <img src="${item.product.image}" alt="${item.product.name}" 
+                         style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                    <div style="flex: 1;">
+                        <h4 style="margin: 0 0 4px 0; font-size: 14px;">${item.product.name}</h4>
+                        ${item.selectedSize ? `<p style="margin: 0; font-size: 12px; color: #666;">Size: ${item.selectedSize}</p>` : ''}
+                        ${item.selectedColor ? `<p style="margin: 0; font-size: 12px; color: #666;">Color: ${item.selectedColor}</p>` : ''}
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <button onclick="updateCartQuantity('${item.product.id}', -1)" 
+                                        style="background: #f0f0f0; border: none; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;">-</button>
+                                <span style="font-weight: 500;">${item.quantity}</span>
+                                <button onclick="updateCartQuantity('${item.product.id}', 1)" 
+                                        style="background: #f0f0f0; border: none; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;">+</button>
+                            </div>
+                            <span style="font-weight: 600;">${formatPrice(itemTotal)}</span>
+                        </div>
+                    </div>
+                `;
+
+        cartItems.appendChild(cartItem);
+    });
+
+    cartTotal.textContent = `Total: ${formatPrice(total)}`;
+}
+
+function updateCartQuantity(productId, change) {
+    const item = cart.find(item => item.product.id === productId);
+    if (!item) return;
+
+    item.quantity += change;
+
+    if (item.quantity <= 0) {
+        cart = cart.filter(item => item.product.id !== productId);
+    }
+
+    saveToLocalStorage('vayun_cart', cart);
+    updateCartCount();
+    loadCartItems();
+}
+
+// Product Detail Functions
+function showProductDetail(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    currentProduct = product;
+
+    // Update breadcrumb
+    document.getElementById('breadcrumbCategory').textContent =
+        product.category.charAt(0).toUpperCase() + product.category.slice(1);
+    document.getElementById('breadcrumbProduct').textContent = product.name;
+
+    // Update product details
+    document.getElementById('productDetailImage').src = product.image;
+    document.getElementById('productDetailImage').alt = product.name;
+    document.getElementById('productDetailName').textContent = product.name;
+    document.getElementById('productDetailStars').innerHTML = generateStars(product.rating);
+    document.getElementById('productDetailReviewCount').textContent = `(${product.reviewCount} reviews)`;
+    document.getElementById('productDetailPrice').textContent = formatPrice(product.price);
+    document.getElementById('productDetailDescription').textContent = product.description;
+
+    // Handle sizes
+    if (product.sizes && product.sizes.length > 0) {
+        const sizeSelection = document.getElementById('sizeSelection');
+        const sizeOptions = document.getElementById('sizeOptions');
+
+        sizeSelection.style.display = 'block';
+        sizeOptions.innerHTML = '';
+
+        product.sizes.forEach(size => {
+            const sizeOption = document.createElement('button');
+            sizeOption.className = 'size-option';
+            sizeOption.textContent = size;
+            sizeOption.onclick = () => selectSize(size);
+            sizeOptions.appendChild(sizeOption);
+        });
+
+        selectedSize = product.sizes[0];
+        updateSelectedSize();
+    } else {
+        document.getElementById('sizeSelection').style.display = 'none';
+    }
+    if (product.colors && product.colors.length > 0) {
+        const colorSelection = document.getElementById('colorSelection');
+        const colorOptions = document.getElementById('colorOptions');
+
+        colorSelection.style.display = 'block';
+        colorOptions.innerHTML = '';
+
+        product.colors.forEach(color => {
+            const colorOption = document.createElement('button');
+            colorOption.className = 'color-option';
+            colorOption.textContent = color;
+            colorOption.onclick = () => selectColor(color);
+            colorOptions.appendChild(colorOption);
+        });
+
+        selectedColor = product.colors[0];
+        updateSelectedColor();
+    } else {
+        document.getElementById('colorSelection').style.display = 'none';
+    }
+
+    // Setup add to cart button
+    const addToCartDetailBtn = document.getElementById('addToCartDetailBtn');
+    if (addToCartDetailBtn) {
+        addToCartDetailBtn.onclick = () => handleAddToCartDetail();
+    }
+
+    showSection('productDetail');
+}
+
+function selectSize(size) {
+    selectedSize = size;
+    updateSelectedSize();
+}
+
+function updateSelectedSize() {
+    const sizeOptions = document.querySelectorAll('.size-option');
+    sizeOptions.forEach(option => {
+        option.classList.remove('selected');
+        if (option.textContent === selectedSize) {
+            option.classList.add('selected');
+        }
+    });
+}
+
+function selectColor(color) {
+    selectedColor = color;
+    updateSelectedColor();
+}
+
+function updateSelectedColor() {
+    const colorOptions = document.querySelectorAll('.color-option');
+    colorOptions.forEach(option => {
+        option.classList.remove('selected');
+        if (option.textContent === selectedColor) {
+            option.classList.add('selected');
+        }
+    });
+}
+
+function handleAddToCartDetail() {
+    if (!currentProduct) return;
+
+    const existingItemIndex = cart.findIndex(item =>
+        item.product.id === currentProduct.id &&
+        item.selectedSize === selectedSize &&
+        item.selectedColor === selectedColor
+    );
+
+    if (existingItemIndex !== -1) {
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        cart.push({
+            product: currentProduct,
+            quantity: 1,
+            selectedSize: selectedSize,
+            selectedColor: selectedColor
+        });
+    }
+
+    saveToLocalStorage('vayun_cart', cart);
+    updateCartCount();
+    showNotification('Product added to cart!');
+}
+
+function buyNow() {
+    if (!currentProduct) return;
+
+    handleAddToCartDetail();
+
+    setTimeout(() => {
+        goToCheckout();
+    }, 500);
+}
+
+function toggleAuthMode() {
+    const authTitle = document.getElementById('authTitle');
+    const authSubmitBtn = document.getElementById('authSubmitBtn');
+    const nameGroup = document.getElementById('nameGroup');
+    const authSwitchText = document.getElementById('authSwitchText');
+    const authSwitchBtn = document.getElementById('authSwitchBtn');
+
+    if (authMode === 'login') {
+        authMode = 'register';
+        authTitle.textContent = 'Sign Up';
+        authSubmitBtn.textContent = 'Sign Up';
+        nameGroup.style.display = 'block';
+        authSwitchText.textContent = 'Already have an account?';
+        authSwitchBtn.textContent = 'Login';
+    } else {
+        authMode = 'login';
+        authTitle.textContent = 'Login';
+        authSubmitBtn.textContent = 'Login';
+        nameGroup.style.display = 'none';
+        authSwitchText.textContent = "Don't have an account?";
+        authSwitchBtn.textContent = 'Sign Up';
+    }
+}
+
+function handleAuthSubmit(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const fullName = document.getElementById('fullName').value.trim();
+
+    if (!email || !password) {
+        showNotification('Please fill in all required fields.');
+        return;
+    }
+
+    if (authMode === 'register' && !fullName) {
+        showNotification('Please enter your full name.');
+        return;
+    }
+
+    if (authMode === 'register') {
+        handleRegister(fullName, email, password);
+    } else {
+        handleLogin(email, password);
+    }
+}
+
+function handleLogin(email, password) {
+    const users = loadFromLocalStorage('vayun_users') || [];
+    const user = users.find(u => u.email === email && u.password === password);
+
+    if (user) {
+        currentUser = {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            phone: user.phone || '',
+            address: user.address || null
+        };
+        isLoggedIn = true;
+
+        saveToLocalStorage('vayun_user', currentUser);
+        updateAuthButton();
+        closeModal('loginModal');
+        showNotification(`Welcome back, ${user.name}!`);
+
+        document.getElementById('authForm').reset();
+    } else {
+        showNotification('Invalid email or password. Please try again.');
+    }
+}
+
+function handleRegister(fullName, email, password) {
+    let users = loadFromLocalStorage('vayun_users') || [];
+
+    const existingUser = users.find(u => u.email === email);
+    if (existingUser) {
+        showNotification('An account with this email already exists. Please login instead.');
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showNotification('Please enter a valid email address.');
+        return;
+    }
+
+    if (password.length < 6) {
+        showNotification('Password must be at least 6 characters long.');
+        return;
+    }
+
+    const newUser = {
+        id: 'user_' + Date.now(),
+        name: fullName,
+        email: email,
+        password: password,
+        createdAt: new Date().toISOString(),
+        phone: '',
+        address: null
+    };
+
+    users.push(newUser);
+    saveToLocalStorage('vayun_users', users);
+
+    currentUser = {
+        id: newUser.id,
+        name: newUser.name,
+        email: newUser.email,
+        phone: newUser.phone,
+        address: newUser.address
+    };
+    isLoggedIn = true;
+
+    saveToLocalStorage('vayun_user', currentUser);
+    updateAuthButton();
+    closeModal('loginModal');
+    showNotification(`Welcome to Vayun, ${fullName}!`);
+
+    document.getElementById('authForm').reset();
+}
+
+// Checkout Functions
+let orderData = null;
+
+function loadCheckoutData() {
+    if (cart.length === 0) {
+        showNotification('Your cart is empty!');
+        showSection('home');
+        return;
+    }
+
+    if (!isLoggedIn) {
+        showNotification('Please login to proceed with checkout');
+        showSection('home');
+        return;
+    }
+
+    const orderItems = document.getElementById('orderItems');
+    const subtotal = document.getElementById('subtotal');
+    const shippingCost = document.getElementById('shippingCost');
+    const taxAmount = document.getElementById('taxAmount');
+    const orderTotal = document.getElementById('orderTotal');
+
+    if (!orderItems) return;
+
+    orderItems.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+        const itemTotal = item.product.price * item.quantity;
+        total += itemTotal;
+
+        const orderItem = document.createElement('div');
+        orderItem.className = 'order-item';
+
+        orderItem.innerHTML = `
+                    <img src="${item.product.image}" alt="${item.product.name}" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">${item.product.name}</div>
+                        ${item.selectedSize ? `<div class="item-variant">Size: ${item.selectedSize}</div>` : ''}
+                        ${item.selectedColor ? `<div class="item-variant">Color: ${item.selectedColor}</div>` : ''}
+                        <div class="item-price">
+                            <span class="item-quantity">Qty: ${item.quantity}</span>
+                            <span class="item-total">${formatPrice(itemTotal)}</span>
+                        </div>
+                    </div>
+                `;
+
+        orderItems.appendChild(orderItem);
+    });
+
+    const shipping = total >= 999 ? 0 : 99;
+    const tax = Math.round(total * 0.18);
+    const finalTotal = total + shipping + tax;
+
+    if (subtotal) subtotal.textContent = formatPrice(total);
+    if (shippingCost) {
+        shippingCost.textContent = shipping === 0 ? 'FREE' : formatPrice(shipping);
+    }
+    if (taxAmount) taxAmount.textContent = formatPrice(tax);
+    if (orderTotal) orderTotal.textContent = formatPrice(finalTotal);
+
+    orderData = {
+        items: cart,
+        subtotal: total,
+        shipping: shipping,
+        tax: tax,
+        total: finalTotal
+    };
+
+    populateUserData();
+}
+
+function populateUserData() {
+    if (!currentUser) return;
+
+    const emailAddress = document.getElementById('emailAddress');
+    if (emailAddress && currentUser.email) {
+        emailAddress.value = currentUser.email;
+    }
+
+    const phoneNumber = document.getElementById('phoneNumber');
+    if (phoneNumber && currentUser.phone) {
+        phoneNumber.value = currentUser.phone;
+    }
+
+    if (currentUser.address) {
+        const address = document.getElementById('address');
+        const city = document.getElementById('city');
+        const state = document.getElementById('state');
+        const pincode = document.getElementById('pincode');
+
+        if (address && currentUser.address.street) {
+            address.value = currentUser.address.street;
+        }
+        if (city && currentUser.address.city) {
+            city.value = currentUser.address.city;
+        }
+        if (state && currentUser.address.state) {
+            state.value = currentUser.address.state;
+        }
+        if (pincode && currentUser.address.pincode) {
+            pincode.value = currentUser.address.pincode;
+        }
+    }
+
+    if (currentUser.name) {
+        const nameParts = currentUser.name.split(' ');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+
+        if (firstName) firstName.value = nameParts[0] || '';
+        if (lastName) lastName.value = nameParts.slice(1).join(' ') || '';
+    }
+}
+
+function handlePaymentMethodChange(event) {
+    const selectedMethod = event.target.value;
+
+    const cardDetails = document.getElementById('cardDetails');
+    const upiDetails = document.getElementById('upiDetails');
+
+    if (cardDetails) cardDetails.style.display = 'none';
+    if (upiDetails) upiDetails.style.display = 'none';
+
+    if (selectedMethod === 'card' && cardDetails) {
+        cardDetails.style.display = 'block';
+    } else if (selectedMethod === 'upi' && upiDetails) {
+        upiDetails.style.display = 'block';
+    }
+}
+
+function validateCheckoutForm() {
+    const requiredFields = [
+        'firstName', 'lastName', 'emailAddress', 'phoneNumber',
+        'address', 'city', 'state', 'pincode'
+    ];
+
+    for (const fieldId of requiredFields) {
+        const field = document.getElementById(fieldId);
+        if (!field || !field.value.trim()) {
+            showNotification(`Please fill in the ${fieldId.replace(/([A-Z])/g, ' $1').toLowerCase()}.`);
+            if (field) field.focus();
+            return false;
+        }
+    }
+
+    const email = document.getElementById('emailAddress').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showNotification('Please enter a valid email address.');
+        document.getElementById('emailAddress').focus();
+        return false;
+    }
+
+    const phone = document.getElementById('phoneNumber').value;
+    const phoneRegex = /^[+]?[0-9]{10,15}$/;
+    if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+        showNotification('Please enter a valid phone number.');
+        document.getElementById('phoneNumber').focus();
+        return false;
+    }
+
+    const pincode = document.getElementById('pincode').value;
+    const pincodeRegex = /^[0-9]{6}$/;
+    if (!pincodeRegex.test(pincode)) {
+        showNotification('Please enter a valid 6-digit pincode.');
+        document.getElementById('pincode').focus();
+        return false;
+    }
+
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    if (!selectedPayment) {
+        showNotification('Please select a payment method.');
+        return false;
+    }
+
+    if (selectedPayment.value === 'card') {
+        const cardNumber = document.getElementById('cardNumber').value.replace(/\s/g, '');
+        const expiryDate = document.getElementById('expiryDate').value;
+        const cvv = document.getElementById('cvv').value;
+
+        if (!cardNumber || cardNumber.length < 13) {
+            showNotification('Please enter a valid card number.');
+            document.getElementById('cardNumber').focus();
+            return false;
+        }
+
+        if (!expiryDate || !/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate)) {
+            showNotification('Please enter a valid expiry date (MM/YY).');
+            document.getElementById('expiryDate').focus();
+            return false;
+        }
+
+        if (!cvv || cvv.length < 3) {
+            showNotification('Please enter a valid CVV.');
+            document.getElementById('cvv').focus();
+            return false;
+        }
+    } else if (selectedPayment.value === 'upi') {
+        const upiId = document.getElementById('upiId').value;
+        if (!upiId || !upiId.includes('@')) {
+            showNotification('Please enter a valid UPI ID.');
+            document.getElementById('upiId').focus();
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function placeOrder() {
+    if (!validateCheckoutForm()) {
+        return;
+    }
+
+    const placeOrderBtn = document.querySelector('.place-order-btn');
+    if (placeOrderBtn) {
+        placeOrderBtn.disabled = true;
+        placeOrderBtn.textContent = 'Processing...';
+    }
+
+    const formData = {
+        firstName: document.getElementById('firstName').value.trim(),
+        lastName: document.getElementById('lastName').value.trim(),
+        email: document.getElementById('emailAddress').value.trim(),
+        phone: document.getElementById('phoneNumber').value.trim(),
+        address: {
+            street: document.getElementById('address').value.trim(),
+            city: document.getElementById('city').value.trim(),
+            state: document.getElementById('state').value.trim(),
+            pincode: document.getElementById('pincode').value.trim()
+        },
+        paymentMethod: document.querySelector('input[name="payment"]:checked').value
+    };
+
+    const order = {
+        id: generateOrderId(),
+        userId: currentUser.id,
+        items: cart.map(item => ({
+            productId: item.product.id,
+            productName: item.product.name,
+            productImage: item.product.image,
+            price: item.product.price,
+            quantity: item.quantity,
+            selectedSize: item.selectedSize,
+            selectedColor: item.selectedColor,
+            total: item.product.price * item.quantity
+        })),
+        customerInfo: formData,
+        subtotal: orderData.subtotal,
+        shipping: orderData.shipping,
+        tax: orderData.tax,
+        total: orderData.total,
+        paymentMethod: formData.paymentMethod,
+        status: 'confirmed',
+        date: new Date().toISOString(),
+        estimatedDelivery: getEstimatedDelivery()
+    };
+
+    let orders = loadFromLocalStorage('vayun_orders') || [];
+    orders.push(order);
+    saveToLocalStorage('vayun_orders', orders);
+
+    // Update user profile
+    currentUser.phone = formData.phone;
+    currentUser.address = formData.address;
+    saveToLocalStorage('vayun_user', currentUser);
+
+    // Clear cart
+    cart = [];
+    saveToLocalStorage('vayun_cart', cart);
+    updateCartCount();
+
+    setTimeout(() => {
+        showOrderConfirmation(order.id);
+
+        if (placeOrderBtn) {
+            placeOrderBtn.disabled = false;
+            placeOrderBtn.textContent = 'Place Order';
+        }
+    }, 2000);
+}
+
+function getEstimatedDelivery() {
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + 5);
+    return deliveryDate.toISOString().split('T')[0];
+}
+
+function showOrderConfirmation(orderId) {
+    const orderIdElement = document.getElementById('orderId');
+    if (orderIdElement) {
+        orderIdElement.textContent = orderId;
+    }
+
+    openModal('orderConfirmationModal');
+}
+
+function goToHome() {
+    closeModal('orderConfirmationModal');
+    showSection('home');
+}
+
+function setupInputFormatting() {
+    const cardNumberInput = document.getElementById('cardNumber');
+    if (cardNumberInput) {
+        cardNumberInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s/g, '').replace(/[^0-9]/gi, '');
+            let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
+            e.target.value = formattedValue;
+        });
+    }
+
+    const expiryInput = document.getElementById('expiryDate');
+    if (expiryInput) {
+        expiryInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 2) {
+                value = value.substring(0, 2) + '/' + value.substring(2, 4);
+            }
+            e.target.value = value;
+        });
+    }
+
+    const cvvInput = document.getElementById('cvv');
+    if (cvvInput) {
+        cvvInput.addEventListener('input', function(e) {
+            e.target.value = e.target.value.replace(/\D/g, '').substring(0, 4);
+        });
+    }
+
+    const pincodeInput = document.getElementById('pincode');
+    if (pincodeInput) {
+        pincodeInput.addEventListener('input', function(e) {
+            e.target.value = e.target.value.replace(/\D/g, '').substring(0, 6);
+        });
+    }
+}
+
+window.addEventListener('click', function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            closeModal(modal.id);
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const demoUsers = [{
+            id: 'demo_user_1',
+            name: 'John Doe',
+            email: 'john@example.com',
+            password: 'password123',
+            phone: '+91 9876543210',
+            address: {
+                street: '123 Main Street',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400001'
+            }
+        },
+        {
+            id: 'demo_user_2',
+            name: 'Jane Smith',
+            email: 'jane@example.com',
+            password: 'password123',
+            phone: '+91 9887654321',
+            address: {
+                street: '456 Park Avenue',
+                city: 'Delhi',
+                state: 'Delhi',
+                pincode: '110001'
+            }
+        }
+    ];
+
+    const existingUsers = loadFromLocalStorage('vayun_users');
+    if (!existingUsers || existingUsers.length === 0) {
+        saveToLocalStorage('vayun_users', demoUsers);
+    }
+});
